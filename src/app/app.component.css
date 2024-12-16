@@ -1,0 +1,81 @@
+/* Estilo general para el cuerpo de la página */
+body {
+    font-family: Arial, Helvetica, sans-serif; /* Aseguramos que si Arial no está disponible, se use Helvetica o sans-serif */
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Estilo para el título */
+  h1 {
+    color: #333;
+    font-size: 2rem;
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  /* Estilo para las secciones */
+  section {
+    width: 80%;
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Estilo para el div dentro de la primera sección */
+  section div {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-right: 30px;
+  }
+  
+  /* Estilo para los inputs */
+  input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 300px;
+  }
+  
+  /* Estilo para el botón */
+  button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Estilo para la sección de tareas */
+  section:last-child {
+    margin-top: 30px;
+  }
+  
+  /* Estilo para el mensaje */
+  div {
+    font-size: 1.2rem;
+    color: #333;
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  /* Estilo para el componente de tareas (si es necesario) */
+  app-tarea {
+    margin-top: 20px;
+  }
+  

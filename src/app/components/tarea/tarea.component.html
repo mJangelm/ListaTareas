@@ -1,0 +1,22 @@
+<section>
+    <h2>Tareas agregadas</h2>
+    <ul>
+    @for (elemento of ArrayPadre; track elemento.nombre) {
+    <div>
+        {{elemento.nombre}}
+    </div>
+    <br>
+    <div class={{elemento.estado}}>Estado: {{elemento.estado}}</div>
+    <br>
+       
+    <button (click)="enviarEvento(elemento)">Eliminar tarea</button>
+    <br>
+    <br>
+
+    }@empty {
+        <li style="list-style: none;">No hay tareas</li>
+    }
+</ul>
+<button  (click)="enviarAviso($event)">Borrar tareas</button>
+    
+</section>
